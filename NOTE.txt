@@ -1,0 +1,11 @@
+yarn init -y
+yarn add -D hardhat
+npx hardhat
+
+npx hardhat compile --network localhost
+npx hardhat node  
+npx hardhat run scripts/deploy.js --network localhost 
+npx hardhat test
+
+npm install --save-dev @nomiclabs/hardhat-etherscan
+yarn add -D @nomiclabs/hardhat-etherscan
