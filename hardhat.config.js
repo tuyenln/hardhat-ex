@@ -18,6 +18,15 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
  */
 module.exports = {
   solidity: "0.8.4",
+  networks: {
+    hardhat: {},
+    ropsten: {
+      url: "https://ropsten.infura.io/v3/fc597a0103f6413698d3d52495cecc41",
+      accounts: {
+        mnemonic: "legent wing chest later father satoshi aisle zone task blanket wave artwork"
+      },
+    },
+  },
   etherscan: {
     // Your API key for Etherscan
     // Obtain one at https://etherscan.io/
